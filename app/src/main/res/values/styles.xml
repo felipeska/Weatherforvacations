@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <style name="WeatherForVacations"
+      parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:colorPrimary">@color/primary</item>
+    <item name="android:colorBackground">@color/background_light</item>
+    <item name="android:colorAccent">@color/accent</item>
+    <item name="android:navigationBarColor">@color/primary_super_dark</item>
+    <item name="android:statusBarColor">@color/background_super_dark</item>
+    <item name="android:textColorHint">@color/hint_disabled_dark</item>
+    <item name="android:windowBackground">@color/background_light</item>
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowSharedElementsUseOverlay">false</item>
+  </style>
+
+  <style name="WeatherForVacations.Translucent">
+    <!-- using a semi-transparent window background for the drag-back gesture -->
+    <item name="android:windowBackground">@color/scrim</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+  </style>
+
+  <style name="WeatherForVacations.Translucent.About">
+  </style>
+
+
+  <style name="Widget.WeatherForVacations"
+      parent="android:Widget"/>
+
+  <style name="Widget.WeatherForVacations.Toolbar">
+    <item name="android:titleTextAppearance">
+      @android:style/TextAppearance.Material.Widget.ActionBar.Title
+    </item>
+    <item name="android:background">?android:colorPrimary</item>
+    <item name="android:theme">@style/WeatherForVacationsDarkOverlay</item>
+  </style>
+
+  <style name="Widget.WeatherForVacations.Toolbar.SmallCapsTitle">
+    <item name="android:titleTextAppearance">@style/TextAppearance.ToolbarTitleSmallCaps</item>
+  </style>
+
+  <style name="TextAppearance.ToolbarTitleSmallCaps"
+      parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    <item name="android:textColor">@color/text_primary_light</item>
+    <item name="android:fontFeatureSettings">smcp</item>
+    <item name="android:letterSpacing">0.2</item>
+  </style>
+
+
+  <style name="Widget.WeatherForVacations.HomeToolbar"
+      parent="Widget.WeatherForVacations.Toolbar.SmallCapsTitle">
+    <item name="android:background">@null</item>
+    <item name="android:elevation">0dp</item>
+    <item name="android:theme">@android:style/ThemeOverlay.Material.Dark</item>
+  </style>
+
+  <style name="Widget.WeatherForVacations.OverlayToolbar"
+      parent="android:Widget.Material.ActionBar">
+    <item name="android:background">@null</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="Widget.WeatherForVacations.Toolbar.Accent">
+    <item name="android:background">?android:colorAccent</item>
+    <item name="android:titleTextAppearance">@style/TextAppearance.AccentToolbar</item>
+  </style>
+
+  <style name="WeatherForVacationsDarkOverlay"
+      parent="@android:style/ThemeOverlay.Material.Dark.ActionBar">
+    <!-- Used to theme dark elements in light themed screens.
+         Extend the material dark Action Bar overlay as this contains text styling. -->
+  </style>
+
+  <style name="TextAppearance.AccentToolbar"
+      parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title.Inverse">
+    <item name="android:textColor">@color/text_on_accent</item>
+  </style>
+
+  <style name="Widget.WeatherForVacations.Toolbar.Transparent">
+    <item name="android:background">@null</item>
+  </style>
+
+  <style name="Widget.WeatherForVacations.AppBar"
+      parent="Widget.Design.AppBarLayout">
+    <item name="android:background">@null</item>
+    <item name="colorPrimary">@color/background_dark</item>
+  </style>
+
+
+</resources>

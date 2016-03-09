@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Weather For Vacations</string>
+  <string name="action_settings">Settings</string>
+  <string name="powered_by_open_weather">Weather data by OpenWeatherMap.org</string>
+</resources>

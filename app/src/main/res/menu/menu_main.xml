@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.ui.activity.MainActivity"
+    >
+  <item
+      android:id="@+id/menu_search"
+      android:title="buscar ciudades"
+      android:icon="@drawable/ic_search_24dp"
+      app:showAsAction="always"
+      />
+
+  <item
+      android:id="@+id/menu_map"
+      android:title="ver mapa"
+      android:icon="@drawable/ic_map_24dp"
+      app:showAsAction="always"
+      />
+</menu>

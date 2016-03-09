@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- app palette -->
+  <color name="primary">#69F0AE</color>
+  <color name="accent">@color/primary</color>
+  <color name="primary_super_dark">#11261c</color>
+  <!-- same hue & sat, 15% brightness -->
+
+  <!-- 87% -->
+  <color name="text_secondary_dark">#8a000000</color>
+  <!-- 38% -->
+  <color name="text_primary_light">#ffffffff</color>
+  <!-- 30% -->
+  <color name="background_light">#fafafa</color>
+  <color name="background_dark">#ff333333</color>
+  <color name="immersive_bars">#99000000</color>
+  <!-- this is blended with immersive_bars to produce the desired status bar color i.e. background_super_dark -->
+  <color name="background_super_dark">#ff292929</color>
+  <color name="scrim">#99323232</color>
+
+  <!-- text (most text uses material theme colours) -->
+  <color name="hint_disabled_dark">#43000000</color>
+  <!-- 26% black -->
+  <color name="text_on_accent">#8f000000</color>
+
+  <!-- designer news -->
+  <color name="nice_day">#03a9f4</color>
+
+  <!-- product hunt-->
+  <color name="sun_day">#ffff9800</color>
+
+
+</resources>

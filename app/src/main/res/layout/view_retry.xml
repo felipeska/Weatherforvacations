@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/retry_view"
+    style="@style/WeatherForVacations.Home.CommonView.RetryView"
+    tools:ignore="UselessParent"
+    android:visibility="gone"
+    >
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/retry_icon"
+      style="@style/WeatherForVacations.Home.CommonTitleText"
+      android:textColor="@android:color/white"
+      android:text="Ooops!"
+      />
+
+  <com.github.pwittchen.weathericonview.WeatherIconView
+      android:id="@+id/retry_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:weatherIconResource="@string/wi_yahoo_13"
+      app:weatherIconColor="@android:color/white"
+      app:weatherIconSize="80"
+      android:layout_gravity="center"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      />
+
+  <TextView
+      android:id="@+id/services_empty_message"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"
+      android:text="An error occurred loading the current weather..."
+      android:layout_below="@+id/retry_icon"
+      />
+  <com.felipecb.weatherforvacations.view.ui.widget.BaselineGridTextView
+      android:id="@+id/retry_button"
+      style="@style/WeatherForVacations.Home.RetryButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Retry again"
+      android:layout_gravity="center"
+      android:layout_below="@+id/services_empty_message"
+      android:layout_centerHorizontal="true"
+      />
+</RelativeLayout>

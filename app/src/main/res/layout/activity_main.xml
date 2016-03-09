@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activity.MainActivity"
+    >
+
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appBar"
+      app:elevation="0dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/Widget.WeatherForVacations.AppBar"
+      >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/Widget.WeatherForVacations.Toolbar.Transparent"
+        />
+  </android.support.design.widget.AppBarLayout>
+
+
+  <LinearLayout
+      android:id="@+id/contentPanel"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        >
+
+      <com.felipecb.weatherforvacations.view.ui.widget.BaselineGridTextView
+          android:id="@+id/weather_temperature_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/display_4_text_size"
+          app:font="roboto-mono-regular"
+          tools:text="39"
+          />
+
+      <com.felipecb.weatherforvacations.view.ui.widget.BaselineGridTextView
+          android:id="@+id/weather_location"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/display_3_text_size"
+          app:font="roboto-mono-regular"
+          tools:text="Bogota"
+          />
+
+      <com.felipecb.weatherforvacations.view.ui.widget.BaselineGridTextView
+          android:id="@+id/weather_description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/display_2_text_size"
+          app:font="roboto-mono-regular"
+          tools:text="Rain"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@color/nice_day"
+        style="@style/Widget.WeatherForVacations.About"
+        android:orientation="vertical"
+        >
+      <com.github.pwittchen.weathericonview.WeatherIconView
+          android:id="@+id/my_weather_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:weatherIconResource="@string/wi_owm_801"
+          app:weatherIconColor="@android:color/white"
+          app:weatherIconSize="80"
+          android:layout_gravity="center_horizontal"
+          />
+
+      <com.felipecb.weatherforvacations.view.ui.widget.BaselineGridTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          app:font="roboto-mono-regular"
+          android:text="@string/powered_by_open_weather"
+          android:layout_gravity="center_horizontal"
+          />
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:indeterminate="true"
+      android:visibility="gone"
+      android:indeterminateTint="?android:colorAccent"
+      android:indeterminateTintMode="src_in"
+      />
+
+  <include
+      layout="@layout/view_retry"
+      />
+
+
+</FrameLayout>
